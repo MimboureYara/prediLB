@@ -7,7 +7,7 @@
 # Enregistrer dans "assets/data"
 
 from numpy.core.defchararray import index
-from scipy.sparse.construct import rand
+#from scipy.sparse.construct import rand
 import gdown
 import pandas as pd
 import numpy as np
@@ -24,10 +24,10 @@ Config.ORIGINAL_DATASET_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
 Config.DATASET_PATH.mkdir(parents=True, exist_ok=True)
 
 # Telecharge notre fichier
-gdown.download(
-    "https://drive.google.com/uc?id=1Xr5qHfW4V-Zv3A6gyOiR8sEzjjspCXue",
-    str(Config.ORIGINAL_DATASET_FILE_PATH)
-)
+# gdown.download(
+    #"https://drive.google.com/uc?id=1Xr5qHfW4V-Zv3A6gyOiR8sEzjjspCXue",
+    #str(Config.ORIGINAL_DATASET_FILE_PATH)
+#)
 
 # dataframe
 df = pd.read_csv(str(Config.ORIGINAL_DATASET_FILE_PATH))
